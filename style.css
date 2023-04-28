@@ -226,21 +226,32 @@ section {
   font-size: 2.5rem;
 }
 
-.about-img {
-  position: relative;
-  border: #ededed solid;
-  border-radius: 50%;
-  height: 300px;
-  width: 300px;
-  margin-left: 35%;
-  margin-bottom: 2%;
-  overflow: hidden;
-}
-.about-img img {
-  height: 400px;
-  width: 300px;
+span {
+  color: var(--main-color);
 }
 
+.about-img {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-top: solid var(--main-color);
+  border-bottom: solid var(--main-color);
+  border-left: solid var(--main-color);
+  border-right: 0.2rem solid var(--main-color);
+  overflow: hidden;
+  padding-top: 17px;
+  margin-left: 37%;
+}
+.about-img img {
+  position: relative;
+  height: 35rem;
+  width: 25rem;
+}
 .about-content h3 {
   font-size: large;
   font-weight: 700;
@@ -250,4 +261,69 @@ section {
   justify-content: center;
   width: 100%;
   padding-top: 10px;
+}
+
+.edu {
+  display: flex;
+  text-align: center;
+
+  background: #112e42;
+  flex-direction: column;
+}
+.title {
+  font-size: 3rem;
+}
+.content {
+  display: flex;
+
+  padding: 20px;
+  text-align: left;
+}
+.educontent1,
+.educontent2 {
+  display: flex;
+
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.educontent1 ul,
+.educontent2 ul {
+  list-style: none;
+  border-left: #00abf0 solid;
+  padding-left: 20px;
+}
+.educontent1 h3,
+.educontent2 h3 {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.educontent1 li,
+.educontent2 li {
+  border: var(--main-color) solid;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.educontent1 li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--main-color);
+  border-radius: 50%;
+  left: 13.44%;
+}
+
+.educontent2 li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--main-color);
+  border-radius: 50%;
+  left: 52.89%;
 }

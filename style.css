@@ -311,7 +311,7 @@ span {
 .lol {
   position: relative;
   z-index: 2;
-  transition: 1s;
+  transition: 0.5s;
 }
 .lol:hover {
   color: #081b29;
